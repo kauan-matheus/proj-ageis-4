@@ -37,16 +37,23 @@ next-env.d.ts
 /infra/terraform/terraform.tfstate
 /infra/terraform/terraform.tfstate.*
 /infra/terraform/.terraform/
+/infra/terraform/**/.terraform/
+/infra/terraform/**/terraform.tfstate
+/infra/terraform/**/terraform.tfstate.*
 /infra/terraform/*.tfvars
 /infra/terraform/*.tfvars.json
 /infra/terraform/*_override.tf
 /infra/terraform/*_override.tf.json
 /infra/terraform/override.tf
 /infra/terraform/override.tf.json
+/infra/terraform/**/crash.log
+/infra/terraform/**/.terraformrc
+/infra/terraform/**/terraform.rc
 
-/infra/terraform/environments/env.tf
 /infra/terraform/environments/*.tfvars
 /infra/terraform/environments/*.tfvars.json
+/infra/terraform/path
+
 
 *.pem
 *.key
