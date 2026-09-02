@@ -1,0 +1,6 @@
+---
+ - name: Verificar Hostname dos servidores
+   hosts: all
+   task:
+    - name: Mostrar Hostnames
+      ansible.builtin.command: hostname
