@@ -1,0 +1,11 @@
+---
+- name: Adicionar permissões aos grupos
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Adicionar ao grupo docker os 2 servidores
+      ansible.builtin.user: #declaro como queremos que o usuario fique
+        name: ansible #nome do usuario
+        groups: docker #grupo a ser adicionado ao usuario
+        append: true #IMPORTANTE: adiciona o grupo aos que ja existem e não substitui eles

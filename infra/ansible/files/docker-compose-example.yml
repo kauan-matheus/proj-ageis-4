@@ -1,0 +1,46 @@
+services:
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+
+    ports:
+      - "PORTA_PC:PORTA_CONTAINER"
+    volumes:
+      - prometheus_volume:/prometheus
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+
+    ports:
+      - "PORTA_PC:PORTA_CONTAINER"
+    volumes:
+      - grafana_volume:/var/lib/grafana
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+
+  portainer:
+    image: portainer/portainer-ce
+    container_name: portainer
+
+    ports:
+      - "PORTA_PC:PORTA_CONTAINER"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+volumes:
+  prometheus_volume:
+  grafana_volume:
+
+
+networks:
+  monitoring:
+    driver: bridge

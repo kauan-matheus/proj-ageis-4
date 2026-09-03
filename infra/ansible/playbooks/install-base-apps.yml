@@ -1,0 +1,26 @@
+---
+- name: Instalar pacotes essenciais
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Instalar Pacotes
+      ansible.builtin.apt:
+        name: "{{ item }}" #isso aqui vai iterar cada item do loop
+
+      loop:
+        - nginx
+        - docker.io
+        - docker-compose-v2
+
+    - name: Garantir que o Nginx esteja rodando
+      ansible.builtin.systemd: #modulo que gerencia serviços
+        name: nginx #dizendo o serviço
+        state: started #controla o estado atual pra garantir que o ngixn esteja rodando
+        enabled: true #garantir que o Nginx esteja configurado para iniciar automaticamente quando o servidor ligar
+
+    - name: Garantir que o Docker esteja rodando
+      ansible.builtin.systemd:
+        name: docker
+        state: started
+        enabled: true

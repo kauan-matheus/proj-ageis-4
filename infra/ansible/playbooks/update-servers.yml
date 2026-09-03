@@ -1,0 +1,13 @@
+---
+- name: Atualizar servidores
+  hosts: all
+  become: true #permite rodar comandos como root
+
+  tasks:
+  - name: Update nos pacotes
+    ansible.builtin.apt:
+      update_cache: true #isso aqui é a msm coisa de apt update
+
+  - name: Upgrade nos pacotes
+    ansible.builtin.apt:
+      upgrade: yes #e isso é a msm coisa de apt upgrade

@@ -1,0 +1,26 @@
+---
+- name: Configurar stack de monitoramento
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Criar diretório da stack
+      ansible.builtin.file:
+        path: /opt/monitoring #cria um diretorio e garante que exista nos servidores 
+        state: directory #garante que seja um diretorio
+        owner: ansible
+        group: ansible
+        mode: '0755' #permissões chmod de r-w-x pro usr
+
+    - name: Enviar docker-compose.yml
+      ansible.builtin.copy:
+        src: ../files/docker-compose.yml #define o diretório de origem do docker-compose
+        dest: /opt/monitoring/docker-compose.yml #define o destino
+        owner: ansible
+        group: ansible
+        mode: '0644' # permissão usr r-w
+
+    - name: Subir stack de monitoramento
+      community.docker.docker_compose_v2: #modulo pra trabalhar com compose
+        project_src: /opt/monitoring #dizendo onde ta o compose
+        state: present #garanta que a stack esteja presente
