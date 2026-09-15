@@ -1,12 +1,50 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11911.148 stable
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementService.Api", "WarehouseManagementService.Api\WarehouseManagementService.Api.csproj", "{F7BE76BB-B514-1BA6-0B8A-28C7F7865D83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementService.Application", "WarehouseManagementService.Application\WarehouseManagementService.Application.csproj", "{9F736C52-635B-21C4-68CF-C7174F941539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementService.Communication", "WarehouseManagementService.Communication\WarehouseManagementService.Communication.csproj", "{5957855D-E885-AEFF-8743-03F69FB22306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementService.Domain", "WarehouseManagementService.Domain\WarehouseManagementService.Domain.csproj", "{C1497BD6-FE08-41CD-FD54-17E89EF4C6E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementService.Infra.Data", "WarehouseManagementService.Infra.Data\WarehouseManagementService.Infra.Data.csproj", "{C4F60E0B-08FB-CC32-E67E-D394FE22717C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementService.Infra.IOC", "WarehouseManagementService.Infra.IOC\WarehouseManagementService.Infra.IOC.csproj", "{423B9BA0-8072-B59F-5F29-324E914B3E02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7BE76BB-B514-1BA6-0B8A-28C7F7865D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7BE76BB-B514-1BA6-0B8A-28C7F7865D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7BE76BB-B514-1BA6-0B8A-28C7F7865D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7BE76BB-B514-1BA6-0B8A-28C7F7865D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F736C52-635B-21C4-68CF-C7174F941539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F736C52-635B-21C4-68CF-C7174F941539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F736C52-635B-21C4-68CF-C7174F941539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F736C52-635B-21C4-68CF-C7174F941539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5957855D-E885-AEFF-8743-03F69FB22306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5957855D-E885-AEFF-8743-03F69FB22306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5957855D-E885-AEFF-8743-03F69FB22306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5957855D-E885-AEFF-8743-03F69FB22306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1497BD6-FE08-41CD-FD54-17E89EF4C6E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1497BD6-FE08-41CD-FD54-17E89EF4C6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1497BD6-FE08-41CD-FD54-17E89EF4C6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1497BD6-FE08-41CD-FD54-17E89EF4C6E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F60E0B-08FB-CC32-E67E-D394FE22717C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F60E0B-08FB-CC32-E67E-D394FE22717C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F60E0B-08FB-CC32-E67E-D394FE22717C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F60E0B-08FB-CC32-E67E-D394FE22717C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{423B9BA0-8072-B59F-5F29-324E914B3E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423B9BA0-8072-B59F-5F29-324E914B3E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423B9BA0-8072-B59F-5F29-324E914B3E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423B9BA0-8072-B59F-5F29-324E914B3E02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
