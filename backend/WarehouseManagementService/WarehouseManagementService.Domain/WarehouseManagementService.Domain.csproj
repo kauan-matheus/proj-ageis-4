@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WarehouseManagementService.Communication\WarehouseManagementService.Communication.csproj" />
+  </ItemGroup>
+
 </Project>
