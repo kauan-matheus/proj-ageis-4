@@ -10,6 +10,7 @@ namespace WarehouseManagementService.Domain.Entities
     {
         public Guid Id { get; set; }
         public string Description { get; set; } = string.Empty;
+        public ICollection<TaskModel> Tasks { get; set; } = new List<TaskModel>();
         public StatusEnum Status { get; set; }
     }
 }
