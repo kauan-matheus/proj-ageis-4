@@ -20,6 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WarehouseManagementService.Application\WarehouseManagementService.Application.csproj" />
+    <ProjectReference Include="..\WarehouseManagementService.Communication\WarehouseManagementService.Communication.csproj" />
     <ProjectReference Include="..\WarehouseManagementService.Infra.IOC\WarehouseManagementService.Infra.IOC.csproj" />
   </ItemGroup>
 

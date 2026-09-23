@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WarehouseManagementService.Communication\WarehouseManagementService.Communication.csproj" />
+    <ProjectReference Include="..\WarehouseManagementService.Domain\WarehouseManagementService.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+  </ItemGroup>
+
 </Project>

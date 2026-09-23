@@ -2,16 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WarehouseManagementService.Communication.Dto.Requests;
 using WarehouseManagementService.Communication.Enums;
 
-namespace WarehouseManagementService.Domain.Entities
+namespace WarehouseManagementService.Communication.Dto.Responses
 {
-    public class OrderModel
+    public class ResponseTaskDto
     {
-        public Guid Id { get; set; }
         public string Description { get; set; } = string.Empty;
-        public ICollection<TaskModel> Tasks { get; set; } = new List<TaskModel>();
         public StatusEnum Status { get; set; }
+        public int Quantity { get; set; }
+        public Guid ProductId { get; set; }
     }
 }

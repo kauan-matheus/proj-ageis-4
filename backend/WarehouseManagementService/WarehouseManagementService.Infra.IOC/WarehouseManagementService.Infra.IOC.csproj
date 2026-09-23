@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WarehouseManagementService.Application\WarehouseManagementService.Application.csproj" />
     <ProjectReference Include="..\WarehouseManagementService.Domain\WarehouseManagementService.Domain.csproj" />
     <ProjectReference Include="..\WarehouseManagementService.Infra.Data\WarehouseManagementService.Infra.Data.csproj" />
   </ItemGroup>
